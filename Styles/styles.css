@@ -7,33 +7,38 @@
     box-sizing: border-box;
 }
 
-.header{
-    min-height: 100vh;
+header{
+    height: 75vh;
     width: 100%;
     background-image: url(../Assets/images/Banners/banner-xl.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
-nav{
+header nav{
     padding: 4% 6% 2% 6%;
+    transition: 1s;
 }
 
-.nav-links{
+header nav .nav-links{
     display: flex;
-    width: 35%;
     margin: auto;
-    list-style: none;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.nav-links li a{
+header nav .nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav .nav-links li .nav-option{
     color: #24181D;
     text-decoration: none;
     font-size: 24px;
     text-transform: uppercase;
 }
 
-.nav-links li a::after{
+header nav .nav-links li .nav-option::after{
     content: "";
     width: 0%;
     height: 3px;
@@ -43,19 +48,23 @@ nav{
     transition: 0.5s;
 }
 
-.nav-links li a:hover::after{
+header nav .nav-links li .nav-option:hover::after{
     width: 100%;
 }
 
 nav.sticky{
-    display: flex;
-    width: 35%;
-    margin: auto;
-    list-style: none;
-    justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
+    padding: 1% 6%;
+    width: 100%;
+    background-color: #F4858E;
+}
+
+header nav .nav-links li .nav-option.sticky{
+    color: white;
+}
+
+header nav .nav-links li .nav-option.sticky:hover::after{
+    background: white;
 }
 
 .presentacion{
@@ -66,15 +75,9 @@ nav.sticky{
 .row{
     margin: auto;
     display: flex;
-    justify-content: space-between;
-}
-
-.izqpres{
-    flex-basis: 65%;
 }
 
 .derpres{
-    width: 100%;
     margin: auto;
     text-align: center;
     font-size: 25px;
