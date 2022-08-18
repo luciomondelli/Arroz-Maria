@@ -107,3 +107,28 @@ h3{
     font-weight: 300;
     margin: 10px 0;
 }
+
+.ilustraciones{
+    display: flex;
+}
+
+.img_ilustraciones{
+    margin: 5%;
+    width: 200px;
+    background-color:#F4858E; 
+    border-radius: 100px ;
+}
+
+.footer_rojo{
+    display: flex;
+    background-color: #F4858E;
+    color: white;
+}
+
+.footer_blanco{
+    display: flex;
+}
+
+#text_der{
+    text-align: right;
+}
