@@ -110,43 +110,57 @@
             <p>3)Revolve y cocinalo 5 minutos mas</p>
         </div>
     </div>
-<section class="ilustraciones">
-    <img class =img_ilustraciones src="Assets/images/Ilustraciones/categoria_01.svg" >
-    <img class =img_ilustraciones src="Assets/images/Ilustraciones/categoria_02.svg" >
-    <img class =img_ilustraciones src="Assets/images/Ilustraciones/categoria_03.svg" >
-    <img class =img_ilustraciones src="Assets/images/Ilustraciones/categoria_04.svg" >
-    <img class =img_ilustraciones src="Assets/images/Ilustraciones/categoria_08.svg" >
+<div class="ilustraciones">
+    <div class="img_ilustraciones">
+        <img src="Assets/images/Ilustraciones/categoria_01.svg" >
+    </div>
+    <div class="img_ilustraciones">
+        <img src="Assets/images/Ilustraciones/categoria_02.svg" >
+    </div>
+    <div class="img_ilustraciones">
+        <img src="Assets/images/Ilustraciones/categoria_03.svg" >
+    </div>
+    <div class="img_ilustraciones">
+        <img src="Assets/images/Ilustraciones/categoria_04.svg" >
+    </div>
+    <div class="img_ilustraciones">
+        <img src="Assets/images/Ilustraciones/categoria_08.svg" >
+    </div>
+</div>
 
 </section>
 
-</section>
-
-
-
-    <script>
-        var navbar = document.getElementById("navbar");
-    
-        window.onscroll = function(){
-            if(window.pageYOffset >= menu.offsetTop){
-                navbar.classList.add("sticky")
-            }
-            else{
-                navbar.classList.remove("sticky")
-            }
-        }
-    </script>
 <footer>
     <div class="footer_rojo">
         <img src="Assets/images/Ilustraciones/mujer-con-estrella.png">
-        <h2 id="text_der">¿Tenes mas ideas?</h2> 
-        <br> 
-        <p>Pronto nos vas a poder mandar tus recetas <br>y  ser parte de nuestra comunidad</p>
+            <div class="ideas">
+                <h2>¿Tenes mas ideas?</h2> 
+                <br> 
+                <p>Pronto nos vas a poder mandar tus recetas <br>y  ser parte de nuestra comunidad</p>
+            </div>
       </div>
     <div class="footer_blanco">
         <h4>(c) Copyright Robert Fox 2022. All rights reserved.</h4>
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy</h5>
-        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms and conditions</h5>
+        <div class="der">
+        <h5>Privacy Policy</h5>
+        <h5>Terms and conditions</h5>
+    </div>
     </div>
 </footer>
 </body>
+
+
+
+<script>
+    var navbar = document.getElementById("navbar");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky")
+        }
+        else{
+            navbar.classList.remove("sticky")
+        }
+    }
+</script>
 </html>

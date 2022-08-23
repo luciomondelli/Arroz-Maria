@@ -110,25 +110,44 @@ h3{
 
 .ilustraciones{
     display: flex;
+    justify-content: space-between;
+    margin: 5%;
 }
 
 .img_ilustraciones{
-    margin: 5%;
-    width: 200px;
+    margin: auto;
+    display: flex;
+    width: 150px;
+    height: 150px;
     background-color:#F4858E; 
-    border-radius: 100px ;
+    border-radius: 50% ;
+    padding: 20px;
+}
+
+.img_ilustraciones img{
+    color: white;
 }
 
 .footer_rojo{
+    padding-left: 70px;
     display: flex;
     background-color: #F4858E;
     color: white;
 }
 
-.footer_blanco{
-    display: flex;
+.ideas{
+    text-align: center;
+    margin: auto;
+    font-size: 150%;
 }
 
-#text_der{
-    text-align: right;
+.footer_blanco{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px; 
+}
+
+.der{
+    display: flex;
+    gap: 30px;
 }
