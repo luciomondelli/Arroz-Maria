@@ -93,13 +93,19 @@ h1{
     color: #AB5D68;
 }
 
-.formas-col{
+.h_formas{
     flex-basis: 31%;
     background: #AB5D68;
     border-radius: 10px;
-    padding: 20px 12px;
-    box-sizing: border-box;
+    padding: 20px 3px 3px 3px;
+    color: white;
+}
 
+.cont_formas{
+    padding: 20px 20px;
+    background-color: white;
+    border: 1px #AB5D68 solid;
+    color: #24181D;
 }
 
 h3{
