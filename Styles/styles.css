@@ -64,7 +64,7 @@ nav.sticky{
 }
 
 .row{
-    margin: auto;
+    margin: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -156,4 +156,15 @@ h3{
 .der{
     display: flex;
     gap: 30px;
+}
+
+.m{
+    text-align: center;
+    background-color: #AB5D68;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    border: #AB5D68 2px solid;
+    font-size: 18px;
+    background-size:contain;
 }
