@@ -7,56 +7,65 @@
     box-sizing: border-box;
 }
 
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(../Assets/images/Banners/banner-xl.jpg);
+/*--------------------NAVIGATION--------------------*/
+section.header{
+    min-height: 75vh;
     background-repeat: no-repeat;
+    background-image: url(../Assets/images/Banners/banner-xl.jpg);
 }
 
-nav{
-    padding: 4% 6% 2% 6%;
+section.header nav{
+    padding: 3% 0%;
+    transition: 1s;
+    text-align: center;
 }
 
-.nav-links{
-    display: flex;
-    width: 35%;
-    margin: auto;
-    list-style: none;
-    justify-content: space-between;
+ul.nav-links{
+    word-spacing: 30px;
 }
 
-.nav-links li a{
+ul.nav-links li{
+    display: inline-block;
+}
+
+ul.nav-links li a{
+    font-size: 24px;
     color: #24181D;
     text-decoration: none;
-    font-size: 24px;
     text-transform: uppercase;
 }
 
-.nav-links li a::after{
-    content: "";
+ul.nav-links li a::after{/*subrayado en las categorias*/
     width: 0%;
     height: 3px;
-    background: #F4858E;
-    display: block;
+    content: "";
     margin: auto;
+    display: block;
     transition: 0.5s;
+    background: #F4858E;
 }
 
-.nav-links li a:hover::after{
+.nav-links li a:hover::after{/*le doy un ancho al subrayado en el hover*/
     width: 100%;
 }
 
-nav.sticky{
-    display: flex;
-    width: 35%;
-    margin: auto;
-    list-style: none;
-    justify-content: space-between;
-    position: fixed;
+section.header nav.sticky{/*propiedades que toma la navegación después de scrollear para que quede fijo*/
     top: 0;
     left: 0;
+    width: 100%;
+    padding: 1%;
+    position: fixed;
+    background-color: #F4858E;
 }
+
+nav.sticky ul.nav-links li a{
+    color: white;
+}
+
+nav.sticky ul.nav-links li a::after{
+    background: white;
+}
+/*--------------------NAVIGATION--------------------*/
 
 .presentacion{
     margin: 40px 18% 40px 18%;
