@@ -82,24 +82,59 @@ section.presentacion div{
 }
 /*--------------------PRESENTACION--------------------*/
 
-.formas{
+/*--------------------COCCIÓN--------------------*/
+section.coccion{
     width: 80%;
     margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-h1{
-    font-size: 50px;
-    font-weight: 300;
-    color: #AB5D68;
 }
 
-.h_formas{
-    flex-basis: 31%;
-    background: #AB5D68;
-    border-radius: 10px;
-    padding: 20px 3px 3px 3px;
+section.coccion h1{
+    font-size: 50px;
+    color: #AB5D68;
+    font-weight: bold;
+    text-align: center;
+}
+
+section.coccion div.card-row{
+    display: flex;
+    justify-content: space-around;/*ver la diferencia entre space-around y space-between*/
+}
+
+section.coccion div.card-row div.single-card div.top{
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: #cd516e;
+    border-radius: 21px 21px 0px 0px;
+}
+
+section.coccion div.card-row div.single-card div.top h3{
     color: white;
+    font-weight: bold;
+}
+
+section.coccion div.card-row div.single-card div.bottom{
+    width: 280px;
+    height: 266px;
+    border: 1px solid #ab435b;
+    border-radius: 0px 0px 21px 21px;
+}
+
+section.coccion div.card-row div.single-card div.bottom p{
+    display: flex;
+    padding: 10px;
+    font-size: 21px;
+}
+
+section.coccion div.card-row div.single-card div.bottom span{
+    color: white;
+    padding: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 13px;
+    background-color: #F4858E;
 }
 
 .cont_formas{
