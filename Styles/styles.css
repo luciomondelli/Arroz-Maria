@@ -200,7 +200,7 @@ section.categorias div.categoria div.circle-background:hover{
 /*--------------------RECETAS--------------------*/
 section.recetas{
     width: 80%;
-    margin: 80px auto;
+    margin: 130px auto;
 }
 
 section.recetas div.row{
@@ -221,10 +221,11 @@ section.recetas div.row div.card-receta-front p{
     justify-content: center;
     align-items: center;
     bottom: 0px;
+    border-radius: 0 0 20px 20px;
 }
 
 section.recetas div.row div.card-receta-front img{
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
 
 .flip-card {
@@ -254,7 +255,7 @@ section.recetas div.row div.card-receta-front, section.recetas div.row div.card-
     
 section.recetas div.row div.card-receta-back {
     text-align: center;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     background-color: rgba(205, 81, 110, 0.5);
     color: white;
     transform: rotateY(180deg);
@@ -281,37 +282,41 @@ div.porciones p, div.tiempo-preparacion p, div.dificultad p{
 
 /*--------------------RECETAS--------------------*/
 
-.footer_rojo{
-    padding-left: 70px;
-    display: flex;
+/*--------------------FOOTER--------------------*/
+footer div.footer_rojo{
+    position: relative;
     background-color: var(--primary_color);
     color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.ideas{
-    text-align: center;
-    margin: auto;
-    font-size: 150%;
+footer img{
+    position: absolute;
+    left: 15%;
+    bottom: 0;
 }
 
-.footer_blanco{
+footer div.footer_rojo h2{
+    font-size: 40px;
+}
+
+footer div.footer_rojo p{
+    font-size: 20px;
+}
+
+footer div.footer_blanco{
     display: flex;
     justify-content: space-between;
-    padding: 40px 70px; 
+    width: 80%;
+    margin: 40px auto; 
 }
 
-.der{
-    display: flex;
-    gap: 30px;
+footer div.footer_blanco p{
+    display: inline-block;
+    margin-right: 20px;
 }
-
-.m{
-    text-align: center;
-    background-color: var(--secondary_color);
-    color: white;
-    border-radius: 10px;
-    padding-bottom: 10px;
-    border: var(--secondary_color) 2px solid;
-    font-size: 18px;
-    background-size:contain;
-}
+/*--------------------FOOTER--------------------*/
